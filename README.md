@@ -12,6 +12,7 @@
 
 lab 2
 
+
 ![Screenshot from 2025-05-20 22-39-09](https://github.com/user-attachments/assets/6549838c-4114-49f6-a041-05e8d292b160)
 
 ![Screenshot from 2025-05-20 22-40-02](https://github.com/user-attachments/assets/7d03d55c-fec1-4219-9d9f-794a5de1378c)
@@ -25,4 +26,15 @@ lab 2
 ![Screenshot from 2025-05-20 23-03-06](https://github.com/user-attachments/assets/c8be941a-d400-45e2-bbb1-a49b355a4e09)
 
 ![Screenshot from 2025-05-20 23-06-09](https://github.com/user-attachments/assets/dae6ac1d-0313-48fe-b36a-24921f25a432)
+
+lab 3 spike 
+![Screenshot from 2025-05-24 20-50-03](https://github.com/user-attachments/assets/856b5c3e-cc31-4555-a5cd-0c76938813d6)
+
+
+![Screenshot from 2025-05-24 20-10-32](https://github.com/user-attachments/assets/84e9c979-bf0e-4664-beab-b05bdfc97ed0)
+![Screenshot from 2025-05-24 20-37-58](https://github.com/user-attachments/assets/074c37f6-a633-42bd-b845-e5db42254865)
+
+
+
+
 
