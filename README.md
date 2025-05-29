@@ -154,7 +154,8 @@ e) J-TYPE: JUMP OPERATIONS
 •	imm[11]: Middle bit of the immediate value.
 •	imm[19:12]: Higher bits of the immediate value.
 
-![image](https://github.com/user-attachments/assets/2a65bc55-484d-4f70-af14-eb2a94256602)
+![image](https://github.com/user-attachments/assets/9cbbb86a-4c89-455c-a78e-513e23a943a1)
+
 
 
 
