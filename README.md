@@ -35,6 +35,130 @@ lab 3 spike
 ![Screenshot from 2025-05-24 20-37-58](https://github.com/user-attachments/assets/074c37f6-a633-42bd-b845-e5db42254865)
 
 
+1. RISC-V (pronounced "risk-five") is a modern instruction set architecture (ISA) developed originally to support computer architecture research and education.
+It is an open-standard ISA, meaning it is free to use and implement by anyone without licensing fees.
+Designed with simplicity and modularity in mind, RISC-V allows for:
+ • Custom extensions tailored to specific applications.
+ • Easier optimization for different domains (e.g., embedded systems, high-performance computing).
+RISC-V follows the principles of Reduced Instruction Set Computing (RISC):
+ • Focuses on a smaller number of simple instructions.
+ • Simplifies hardware design, which can lead to improved performance and efficiency.
+2.	RV32I Base Integer Instruction Set
+The RV32I Base Integer Instruction Set is a fundamental subset of the RISC-V instruction set architecture (ISA) designed for 32-bit integer operations. It provides the essential instructions needed to perform basic computing tasks. Here’s a detailed breakdown:
+Overview of RV32I:
+•	32-bit Architecture: The "32" in RV32I refers to the 32-bit width of the instruction set, indicating that instructions and data are processed as 32-bit entities.
+•	Base Integer Instructions: The "I" stands for "Integer," meaning this set covers the basic operations for integer arithmetic, logic, and data manipulation.
+Basic Operations:
+•	Arithmetic: Add, subtract, multiply, divide.
+•	Logical: AND, OR, XOR, shift operations.
+•	Data Movement: Load from memory, store to memory.
+•	Control Flow: Conditional branches, jumps, subroutine calls.
+ 
+Instruction Formats:
+•	R-Type: For register-to-register operations (e.g., add, sub).
+•	I-Type: For immediate value operations and loads (e.g., addi, lw).
+•	S-Type: For store operations (e.g., sw).
+•	B-Type: For branch operations (e.g., beq).
+•	U-Type: For upper immediate operations (e.g., lui).
+•	J-Type: For jump operations (e.g., jal).
+
+Instruction Set 
+![image](https://github.com/user-attachments/assets/ce569a07-a3b9-41d0-a4d1-7308a24127fb)
+
+32 bit risc-v instruction set 
+
+![image](https://github.com/user-attachments/assets/a77cd61d-7e47-40a2-8c32-02e4d2861545)
+
+
+3.	BASE INSTRUCTION FORMATS AND TYPES
+	In RISC-V, Generally in base RV32I ISA, there are four core instruction formats (R/I/S/U)
+  There are a further two variants of the instruction formats (B/J) based on the handling of immediates, these base instruction formats that define how instructions are encoded within a 32-bit word
+  Finally, it can be classified as,
+•	R-type: Register-Register operations
+•	I-type: Immediate operations
+•	S-type: Store operations
+•	B-type: Branch operations
+•	U-type: Upper immediate operations
+•	J-type: Jump operations
+a) R-TYPE: REGISTER-REGISTER OPERATIONS
+  Purpose: Performs operations using an immediate (constant) value and a register.
+
+![image](https://github.com/user-attachments/assets/98143392-67c2-462b-8a63-0bd29df41dd0)
+
+  Fields:
+•	opcode: Specifies the type of instruction.
+•	rd: Destination register.
+•	funct3: Further specifies the operation.
+•	rs1: Source register.
+•	imm[11:0]: 12-bit immediate value.
+
+b) I-TYPE: IMMEDIATE OPERATIONS
+	Purpose: Performs operations using an immediate (constant) value and a register.
+ 
+ ![image](https://github.com/user-attachments/assets/d7724f9c-4f4e-49f0-9773-afae156407ed)
+
+  Fields:
+•	opcode: Specifies the type of instruction.
+•	rd: Destination register.
+•	funct3: Further specifies the operation.
+•	rs1: Source register.
+•	imm[11:0]: 12-bit immediate value.
+S-TYPE: STORE OPERATIONS
+  Purpose: Stores data from a register to memory.
+  
+![image](https://github.com/user-attachments/assets/b1483f5c-e53c-4426-9f84-d135eba9ebef)
+
+  Fields:
+•	opcode: Specifies the type of instruction.
+•	imm[11:5]: Higher bits of the 12-bit immediate value.
+•	funct3: Further specifies the operation.
+•	rs1: Base address register. 
+•	rs2: Source register.
+•	imm[4:0]: Lower bits of the 12-bit immediate value.
+
+c) B-TYPE: BRANCH OPERATIONS
+	Purpose:	Performs	conditional	branches	based	on	the comparison of two registers.
+ 
+![image](https://github.com/user-attachments/assets/5b132673-c25c-43c0-8ecd-c3ec2e1a4569)
+
+ Fields:
+•	opcode: Specifies the type of instruction.
+•	imm[12]: Sign bit of the immediate value.
+•	imm[10:5]: Higher bits of the immediate value.
+•	funct3: Further specifies the operation.
+•	rs1: First source register.
+•	rs2: Second source register.
+•	imm[4:1]: Lower bits of the immediate value.
+•	imm[11]: Middle bit of the immediate value.
+
+d) U-TYPE: UPPER IMMEDIATE OPERATIONS
+  Purpose: Loads a 20-bit immediate value into the upper 20 bits of a register.
+  
+  ![image](https://github.com/user-attachments/assets/8aebc8ef-f80b-453a-9d4e-518bd7b1efda)
+
+  Fields:
+•	opcode: Specifies the type of instruction.
+•	rd: Destination register.
+•	imm[31:12]: 20-bit immediate value.
+
+e) J-TYPE: JUMP OPERATIONS
+	Purpose: Performs jumps to a target address specified by an immediate value.
+ 
+![image](https://github.com/user-attachments/assets/bfe65d0b-ed42-4e27-aec4-f07a6ca4df29) 
+
+  Fields:
+•	opcode: Specifies the type of instruction.
+•	rd: Destination register.
+•	imm[20]: Sign bit of the immediate value.
+•	imm[10:1]: Lower bits of the immediate value.
+•	imm[11]: Middle bit of the immediate value.
+•	imm[19:12]: Higher bits of the immediate value.
+
+![image](https://github.com/user-attachments/assets/2a65bc55-484d-4f70-af14-eb2a94256602)
+
+
+
+
 
 
 
