@@ -161,25 +161,35 @@ task 4
 
 ![Screenshot from 2025-06-02 20-07-11](https://github.com/user-attachments/assets/06e7fe00-3f49-49a7-93b9-c6ecfc9a1a45)
 1.ADD r6, r2, r1
-![Screenshot from 2025-06-02 20-53-16](https://github.com/user-attachments/assets/59df17ef-e572-4c30-811d-96066a7028c0)
+![Screenshot from 2025-06-02 20-53-16](https://github.com/user-attachments/assets/38166580-924b-4ee0-af83-9158554e8989)
+
 2.SUB r7, r1, r2
-![Screenshot from 2025-06-02 21-46-52](https://github.com/user-attachments/assets/2361baa4-7228-41dd-b10c-93536a94c9c7)
+![Screenshot from 2025-06-02 21-48-13](https://github.com/user-attachments/assets/fd808ff2-5ec2-414f-865e-580d52a823f7)
+
 3.AND r8, r1, r3
-![Screenshot from 2025-06-02 21-48-13](https://github.com/user-attachments/assets/67ded833-32b8-41b0-991b-9edf61d284ad)
+![Screenshot from 2025-06-02 21-48-22](https://github.com/user-attachments/assets/ba86518e-735b-42e9-9976-7f61943e05c8)
+
 4.OR r9, r2, r5
-![Screenshot from 2025-06-02 21-48-22](https://github.com/user-attachments/assets/0499ad31-7314-41d0-a05d-2c9298bf7857)
+![Screenshot from 2025-06-02 21-48-30](https://github.com/user-attachments/assets/c77b2d56-8169-4d1e-b052-3e0a692c9731)
+
 5.XOR r10, r1, r4
-![Screenshot from 2025-06-02 21-48-30](https://github.com/user-attachments/assets/33cf5432-181a-48c0-b988-5d5ad30ad16d)
+![Screenshot from 2025-06-02 21-48-42](https://github.com/user-attachments/assets/a193a3f0-e6a4-410c-8d3b-57d42ebeb725)
+
 6.SLT r11, r2, r4
-![Screenshot from 2025-06-02 21-48-42](https://github.com/user-attachments/assets/b063a5ac-7c35-4860-9b18-d3b9772776df)
+![Screenshot from 2025-06-02 21-48-53](https://github.com/user-attachments/assets/78eef2bd-644d-4604-a0ae-f225fc490666)
+
 7.ADDI r12, r4, 5
-![Screenshot from 2025-06-02 21-48-53](https://github.com/user-attachments/assets/075a4f55-df45-49fc-895e-f8cb13583c36)
+![Screenshot from 2025-06-02 21-49-47](https://github.com/user-attachments/assets/e9029310-053c-4091-a723-a8b54332ddbd)
+
 8.SW r3, r1, 2
-![Screenshot from 2025-06-02 21-49-47](https://github.com/user-attachments/assets/5f0ee3e6-e993-45b4-ae79-313cc2e10b7b)
+![Screenshot from 2025-06-02 21-50-12](https://github.com/user-attachments/assets/a21c55de-37ce-445f-a048-1153261ad3ad)
+
 9.LW r13, r1, 2
-![Screenshot from 2025-06-02 21-50-12](https://github.com/user-attachments/assets/7abedfb3-2a70-495d-aa47-8cee1040894f)
+![Screenshot from 2025-06-02 21-51-36](https://github.com/user-attachments/assets/bd4cd370-6959-46ca-9809-970e9e03ae38)
+
 10.BEQ r0, r0, 15
-![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/9b110888-abf0-4886-94de-69b59030b0a9)
+
+![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/848ba19f-3195-4fed-9f02-c353bcf7ed16)
 
 
 
