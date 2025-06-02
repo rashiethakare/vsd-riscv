@@ -156,6 +156,32 @@ e) J-TYPE: JUMP OPERATIONS
 
 ![image](https://github.com/user-attachments/assets/9cbbb86a-4c89-455c-a78e-513e23a943a1)
 
+lab 4 
+task 4
+
+![Screenshot from 2025-06-02 20-07-11](https://github.com/user-attachments/assets/06e7fe00-3f49-49a7-93b9-c6ecfc9a1a45)
+1.ADD r6, r2, r1
+![Screenshot from 2025-06-02 20-53-16](https://github.com/user-attachments/assets/59df17ef-e572-4c30-811d-96066a7028c0)
+2.SUB r7, r1, r2
+![Screenshot from 2025-06-02 21-46-52](https://github.com/user-attachments/assets/2361baa4-7228-41dd-b10c-93536a94c9c7)
+3.AND r8, r1, r3
+![Screenshot from 2025-06-02 21-48-13](https://github.com/user-attachments/assets/67ded833-32b8-41b0-991b-9edf61d284ad)
+4.OR r9, r2, r5
+![Screenshot from 2025-06-02 21-48-22](https://github.com/user-attachments/assets/0499ad31-7314-41d0-a05d-2c9298bf7857)
+5.XOR r10, r1, r4
+![Screenshot from 2025-06-02 21-48-30](https://github.com/user-attachments/assets/33cf5432-181a-48c0-b988-5d5ad30ad16d)
+6.SLT r11, r2, r4
+![Screenshot from 2025-06-02 21-48-42](https://github.com/user-attachments/assets/b063a5ac-7c35-4860-9b18-d3b9772776df)
+7.ADDI r12, r4, 5
+![Screenshot from 2025-06-02 21-48-53](https://github.com/user-attachments/assets/075a4f55-df45-49fc-895e-f8cb13583c36)
+8.SW r3, r1, 2
+![Screenshot from 2025-06-02 21-49-47](https://github.com/user-attachments/assets/5f0ee3e6-e993-45b4-ae79-313cc2e10b7b)
+9.LW r13, r1, 2
+![Screenshot from 2025-06-02 21-50-12](https://github.com/user-attachments/assets/7abedfb3-2a70-495d-aa47-8cee1040894f)
+10.BEQ r0, r0, 15
+![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/9b110888-abf0-4886-94de-69b59030b0a9)
+
+
 
 
 
