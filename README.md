@@ -204,10 +204,92 @@ task 4
 ![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/848ba19f-3195-4fed-9f02-c353bcf7ed16)
 
 task 5
-# Implementing Full Adder using VSDSquadron Mini
+# Automatic Light System using VSDSquadron Mini
+
+## Overview 
+An Automatic Light System is designed to intelligently control lighting based on human presence. When motion is detected within the sensor's range, the system automatically turns on and blink the light. Additionally, it provides a visual indication of motion detection by blinking an LED three times.
+
+## Components Required
+
+1. VSDSquadron Mini Board
+2. IR Sensor (Infrared Motion Detector)
+3. LEDs
+4. Breadboard
+5. USB Cable
+6. Jumper Wires
+
+## Working 
+
+The IR sensor is strategically positioned to effectively monitor a designated area for motion. It continuously scans its surroundings for variations in infrared radiation, which typically occur when a person moves within its sensing range.
+When an individual enters the detection zone, the sensor identifies the change in infrared levels and generates an output signal. This signal is sent to the microcontroller, which then performs two key actions:
+
+1. It activates the LED lighting system to provide illumination.
+2. It causes the LED to blink three times, serving as a visual indication that motion has been detected.
+   
+This dual functionality ensures both automatic lighting and clear motion feedback, making the system suitable for energy-efficient and smart automation setups.
 
 
 
+![image](https://github.com/user-attachments/assets/4df9cf99-ca72-4822-9b32-ade9fed11442)
+
+## Pin configuration 
+![image](https://github.com/user-attachments/assets/fa56e3b3-8c4b-438d-a63d-6ffda07fa2ec)
+
+## Code of the Project
+
+// These include the necessary header files for the CH32V microcontroller and debugging purposes
+#include <ch32v00x.h>
+#include <debug.h>
+
+// Pin configuration
+void GPIO_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure = {0}; // structure variable for GPIO configuration
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // Enable the clock for Port D
+
+    // Pin 4: INPUT PIN for IR SENSOR
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Input with pull-up
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    // Pin 6: OUTPUT PIN for LED
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Output push-pull
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+
+// Main function
+int main(void)
+{
+    uint8_t IR = 0;
+    uint8_t set = 1;
+    uint8_t reset = 0;
+    uint8_t a = 0;
+
+    SystemCoreClockUpdate(); // Update system core clock
+    Delay_Init();            // Initialize delay
+    GPIO_Config();           // Configure GPIO pins
+
+    while (1)
+    {
+        IR = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+
+        // IR == 0 means motion detected (Active LOW)
+        if (IR == 0)
+        {
+            // Blink LED three times
+            for (a = 0; a < 3; a++)
+            {
+                GPIO_WriteBit(GPIOD, GPIO_Pin_6, set);
+                Delay_Ms(200);
+                GPIO_WriteBit(GPIOD, GPIO_Pin_6, reset);
+                Delay_Ms(100);
+            }
+        }
+    }
+}
 
 
 
