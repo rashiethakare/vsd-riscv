@@ -4,7 +4,8 @@ Subsequently, a simple C program was written to calculate the sum of natural num
 ```bash  
 gedit sum_1_to_n.c  
 ```
-
+```bash  
+```
 ![Screenshot from 2025-05-20 19-55-35](https://github.com/user-attachments/assets/99ef65cd-b81f-45ef-9c3c-a189ce84cbf2)
 
 ![Screenshot from 2025-05-20 20-04-28](https://github.com/user-attachments/assets/d888aa40-5833-44de-a601-08719f5c5045)
