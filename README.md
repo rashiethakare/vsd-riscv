@@ -1,6 +1,8 @@
 # vsd-riscv
 # The installation of the RISC-V toolchain was successfully completed.
 Subsequently, a simple C program was written to calculate the sum of natural numbers from 1 to n. The code was compiled using the RISC-V compiler, and the output was executed on a RISC-V compatible environment. A snapshot of the program's output is attached as evidence of successful compilation and execution.
+$ gedit sum_1_to_n.c
+
 
 ![Screenshot from 2025-05-20 19-55-35](https://github.com/user-attachments/assets/99ef65cd-b81f-45ef-9c3c-a189ce84cbf2)
 
