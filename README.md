@@ -230,7 +230,8 @@ When an individual enters the detection zone, the sensor identifies the change i
 This dual functionality ensures both automatic lighting and clear motion feedback, making the system suitable for energy-efficient and smart automation setups.
 
 
-![image](https://github.com/user-attachments/assets/4df9cf99-ca72-4822-9b32-ade9fed11442)
+![image](https://github.com/user-attachments/assets/e3ffef58-a975-472d-9b9a-e0414e631cd6)
+
 
 ## Pin configuration 
 ![image](https://github.com/user-attachments/assets/fa56e3b3-8c4b-438d-a63d-6ffda07fa2ec)
