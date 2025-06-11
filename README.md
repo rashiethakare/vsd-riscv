@@ -2,21 +2,28 @@
 # The installation of the RISC-V toolchain was successfully completed.
 Subsequently, a simple C program was written to calculate the sum of natural numbers from 1 to n. The code was compiled using the RISC-V compiler, and the output was executed on a RISC-V compatible environment. A snapshot of the program's output is attached as evidence of successful compilation and execution.
 ```bash  
-gedit sum_1_to_n.c  
-```
-```bash  
+cd
+leafpad sum1ton.c &
 ```
 ![Screenshot from 2025-05-20 19-55-35](https://github.com/user-attachments/assets/99ef65cd-b81f-45ef-9c3c-a189ce84cbf2)
-
+```bash  
+gcc sum1ton.c
+ls -ltr
+```
 ![Screenshot from 2025-05-20 20-04-28](https://github.com/user-attachments/assets/d888aa40-5833-44de-a601-08719f5c5045)
-
+```bash  
+./a.out
+```
 ![Screenshot from 2025-05-20 20-08-31](https://github.com/user-attachments/assets/e479996a-8b2b-4ac3-802d-de2ae389ee3f)
-
+Checking it  
 ![Screenshot from 2025-05-20 20-10-04](https://github.com/user-attachments/assets/5c440252-e49a-4cdc-92d8-c7f5d64a59f6)
 
 
-lab 2
-
+# SPIKE Simulation
+```bash
+cat sum1ton.c
+riscv64-unknown-elf-gcc -01 -mabi=lp64 -march=rv64t -o suniton.o niton.c 
+```
 
 ![Screenshot from 2025-05-20 22-39-09](https://github.com/user-attachments/assets/6549838c-4114-49f6-a041-05e8d292b160)
 
