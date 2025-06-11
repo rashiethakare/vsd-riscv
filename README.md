@@ -1,4 +1,4 @@
-# vsd-riscv
+# TASK 1
 # The installation of the RISC-V toolchain was successfully completed.
 Subsequently, a simple C program was written to calculate the sum of natural numbers from 1 to n. The code was compiled using the RISC-V compiler, and the output was executed on a RISC-V compatible environment. A snapshot of the program's output is attached as evidence of successful compilation and execution.
 ```bash  
@@ -18,7 +18,7 @@ ls -ltr
 Checking it  
 ![Screenshot from 2025-05-20 20-10-04](https://github.com/user-attachments/assets/5c440252-e49a-4cdc-92d8-c7f5d64a59f6)
 
-
+# TASK 2
 # SPIKE Simulation
 ```bash
 cat sum1ton.c
@@ -39,7 +39,8 @@ riscv64-unknown-elf-gcc -01 -mabi=lp64 -march=rv64t -o suniton.o niton.c
 
 ![Screenshot from 2025-05-20 23-06-09](https://github.com/user-attachments/assets/dae6ac1d-0313-48fe-b36a-24921f25a432)
 
-lab 3 spike 
+# TASK 3
+
 ![Screenshot from 2025-05-24 20-50-03](https://github.com/user-attachments/assets/856b5c3e-cc31-4555-a5cd-0c76938813d6)
 
 
@@ -168,8 +169,8 @@ e) J-TYPE: JUMP OPERATIONS
 
 ![image](https://github.com/user-attachments/assets/9cbbb86a-4c89-455c-a78e-513e23a943a1)
 
-lab 4 
-task 4
+
+# TASK 4
 
 ![Screenshot from 2025-06-02 20-07-11](https://github.com/user-attachments/assets/06e7fe00-3f49-49a7-93b9-c6ecfc9a1a45)
 1.ADD r6, r2, r1
@@ -203,7 +204,7 @@ task 4
 
 ![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/848ba19f-3195-4fed-9f02-c353bcf7ed16)
 
-task 5
+# TASK 5
 # Automatic Light System using VSDSquadron Mini
 
 ## Overview 
@@ -229,13 +230,14 @@ When an individual enters the detection zone, the sensor identifies the change i
 This dual functionality ensures both automatic lighting and clear motion feedback, making the system suitable for energy-efficient and smart automation setups.
 
 
-
 ![image](https://github.com/user-attachments/assets/4df9cf99-ca72-4822-9b32-ade9fed11442)
 
 ## Pin configuration 
 ![image](https://github.com/user-attachments/assets/fa56e3b3-8c4b-438d-a63d-6ffda07fa2ec)
 
+# TASK 6
 ## Code of the Project
+```bash  
 
 // These include the necessary header files for the CH32V microcontroller and debugging purposes
 #include <ch32v00x.h>
@@ -290,6 +292,18 @@ int main(void)
         }
     }
 }
+
+```
+![image](https://github.com/user-attachments/assets/92fe6bc2-b2d1-4db9-8637-ea927ca78844)
+
+
+https://github.com/user-attachments/assets/298ec4ad-05b7-412e-8ddd-b81f3ba124d9
+
+# Powerpiont link 
+[vsd.pptx](https://github.com/user-attachments/files/20696841/vsd.pptx)
+
+
+
 
 
 
