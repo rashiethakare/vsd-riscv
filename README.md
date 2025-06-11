@@ -192,7 +192,7 @@ task 4
 ![Screenshot from 2025-06-02 21-51-48](https://github.com/user-attachments/assets/848ba19f-3195-4fed-9f02-c353bcf7ed16)
 
 task 5
-#Implementing Full Adder using VSDSquadron Mini
+### Implementing Full Adder using VSDSquadron Mini
 
 
 
